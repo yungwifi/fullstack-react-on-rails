@@ -8,6 +8,8 @@ rails new $APPNAME --api -d postgresql
 
 cd $APPNAME
 
+gem install foreman
+
 git init
 
 create-react-app client
