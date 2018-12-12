@@ -66,8 +66,8 @@ rails db:drop db:create db:migrate
 
 heroku create $APPNAME
 
-heroku buildpacks:add --index 2 heroku/nodejs
 heroku buildpacks:add --index 1 heroku/ruby
+heroku buildpacks:add --index 2 heroku/nodejs
 
 heroku addons:create heroku-postgresql:hobby-dev
 
